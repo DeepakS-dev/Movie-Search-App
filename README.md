@@ -121,36 +121,4 @@ Search Screen
 Planet Details
 Planet Details
 
-Contributing
-Contributions are welcome! If you'd like to contribute to this project, please follow these steps:
-
-Fork the repository.
-
-Create a new branch (git checkout -b feature/YourFeatureName).
-
-Commit your changes (git commit -m 'Add some feature').
-
-Push to the branch (git push origin feature/YourFeatureName).
-
-Open a pull request.
-
-License
-This project is licensed under the MIT License. See the LICENSE file for details.
-
-Acknowledgements
-SWAPI for providing the Star Wars API.
-
-React and React Router for building the application.
-
-Contact
-For any questions or feedback, feel free to reach out:
-
-Your Name
-
-Email: your.email@example.com
-
-GitHub: your-username
-
-Enjoy exploring the Star Wars universe with the Movie Search App! 🚀✨
-
-Let me know if you need further assistance or additional details!
+ Thank You.

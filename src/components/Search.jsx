@@ -40,13 +40,13 @@ const Search = ({ user }) => {
 
   const handlePlanetClick = (planet) => {
     setSelectedPlanet(planet);
-    setQuery(planet.name); // Set clicked planet name in input field
-    setPlanets([]); // Hide suggestions after selection
+    setQuery(planet.name); 
+    setPlanets([]); 
   };
 
   const handleLogout = () => {
     localStorage.removeItem("user");
-    navigate("/");
+    navigate("/Movie-Search-App");
   };
 
   return (
@@ -63,7 +63,7 @@ const Search = ({ user }) => {
           onChange={(e) => setQuery(e.target.value)}
         />
 
-        {/* Suggestion Dropdown */}
+        
         {query && planets.length > 0 && (
           <ul className="suggestion-list">
             {planets.map((planet) => (

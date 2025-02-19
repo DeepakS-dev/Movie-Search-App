@@ -46,7 +46,7 @@ const Search = ({ user }) => {
 
   const handleLogout = () => {
     localStorage.removeItem("user");
-    navigate("/Movie-Search-App");
+    navigate("/");
   };
 
   return (

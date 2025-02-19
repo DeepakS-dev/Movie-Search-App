@@ -16,7 +16,7 @@ const AppRoutes = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/Movie-Search-App" element={<Login setUser={setUser} />} />
+        <Route path="/" element={<Login setUser={setUser} />} />
         <Route
           path="/search"
           element={user ? <Search user={user} /> : <Login setUser={setUser} />}

@@ -1,71 +1,156 @@
-# Getting Started with Create React App
+React
+React Router
+Axios
+SWAPI
+The Movie Search App is a React-based application that allows users to log in as a Star Wars character and search for planets from the Star Wars universe. The app fetches data from the SWAPI (Star Wars API) and displays planets with dynamic sizing based on their population.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Features
+Login Screen:
 
-## Available Scripts
+Users can log in using a Star Wars character's name as the username and their birth year as the password.
 
-In the project directory, you can run:
+Example:
 
-### `npm start`
+Username: Luke Skywalker
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Password: 19BBY
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Search Screen:
 
-### `npm test`
+A type-along search bar that fetches and displays planets from the SWAPI on every keystroke.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Planets are displayed in components sized relative to their population (e.g., larger font size for planets with higher populations).
 
-### `npm run build`
+Clicking on a planet displays its detailed information.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Advanced Features:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Rate limiting: Only the user Luke Skywalker can perform more than 15 searches per minute.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Responsive Design:
 
-### `npm run eject`
+The app is fully responsive and works seamlessly on desktop, tablet, and mobile devices.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Technologies Used
+Frontend:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+React
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+React Router (for navigation)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Axios (for API calls)
 
-## Learn More
+Styling:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+CSS (with dynamic styling for planet components)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+API:
 
-### Code Splitting
+SWAPI (Star Wars API)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Setup and Installation
+Follow these steps to set up and run the application locally:
 
-### Analyzing the Bundle Size
+Clone the Repository:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+Copy
+git clone https://github.com/your-username/movie-search-app.git
+cd movie-search-app
+Install Dependencies:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+Copy
+npm install
+Run the Application:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
+Copy
+npm start
+The app will start running on http://localhost:3000.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Run Tests (Optional):
 
-### `npm run build` fails to minify
+-
+Copy
+npm test
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# Movie-Search-App
+Usage
+Login:
+
+Enter a valid Star Wars character's name and birth year to log in.
+
+Example:
+
+Username: Luke Skywalker
+
+Password: 19BBY
+
+Search for Planets:
+
+On the Search screen, type in the search bar to fetch planets.
+
+Planets will be displayed with sizes proportional to their population.
+
+View Planet Details:
+
+Click on a planet to view its detailed information.
+
+Logout:
+
+Click the "Logout" button to return to the Login screen.
+
+API Usage
+The app uses the following SWAPI endpoints:
+
+Characters:
+
+https://swapi.dev/api/people/?search={name}
+
+Planets:
+
+https://swapi.dev/api/planets/?search={name}
+
+Screenshots
+Login Screen
+Login Screen
+
+Search Screen
+Search Screen
+
+Planet Details
+Planet Details
+
+Contributing
+Contributions are welcome! If you'd like to contribute to this project, please follow these steps:
+
+Fork the repository.
+
+Create a new branch (git checkout -b feature/YourFeatureName).
+
+Commit your changes (git commit -m 'Add some feature').
+
+Push to the branch (git push origin feature/YourFeatureName).
+
+Open a pull request.
+
+License
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+Acknowledgements
+SWAPI for providing the Star Wars API.
+
+React and React Router for building the application.
+
+Contact
+For any questions or feedback, feel free to reach out:
+
+Your Name
+
+Email: your.email@example.com
+
+GitHub: your-username
+
+Enjoy exploring the Star Wars universe with the Movie Search App! 🚀✨
+
+Let me know if you need further assistance or additional details!

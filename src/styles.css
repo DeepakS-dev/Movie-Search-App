@@ -1,0 +1,133 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #222;
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-container {
+  width: 320px;
+  padding: 20px;
+  background-color: #333;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.logout-btn {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  padding: 8px 12px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  z-index: 10; /* Ensures it stays on top */
+}
+
+.logout-btn:hover {
+  background-color: #d32f2f;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin: 8px 0;
+}
+
+button {
+  padding: 10px;
+  background-color: #feda4a;
+  border: none;
+  cursor: pointer;
+}
+
+.search-container {
+  width: 25%;
+  margin: 20px auto 0; /* Centers horizontally and adds top margin */
+  padding: 20px;
+  background-color: #333;
+  border-radius: 8px;
+  position: absolute;
+  top: 20px; /* Adjusted to avoid overlap */
+  left: 50%;
+  transform: translateX(-50%);
+}
+.planet {
+  cursor: pointer;
+  padding: 10px;
+  margin: 5px;
+  margin-top: 10px;
+  background-color: #444;
+  border-radius: 5px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.planet:hover {
+  transform: scale(1.05);
+  background-color: #555;
+}
+
+.planet-details {
+  width: 400px;
+  max-width: 80%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #222;
+  border-radius: 10px;
+  color: white;
+  text-align: left;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.planet-details h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.planet-details p {
+  font-size: 18px;
+  margin: 5px 0;
+}
+.typed-preview {
+  color: #bbb;
+  font-size: 0.9em;
+  margin-top: 5px;
+  text-align: center;
+}
+.suggestion-list {
+    position: absolute;
+    width: 90%;
+    background: rgb(78, 107, 91);
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 0px;
+    padding: 0;
+    list-style: none;
+    max-height: 150px;
+    overflow-y: auto;
+    z-index: 1000;
+  }
+  .suggestion-list::-webkit-scrollbar {
+    display: none; 
+  }
+  
+  .suggestion-list li {
+    padding: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .suggestion-list li:hover {
+    background: #1f7d43;
+  }
